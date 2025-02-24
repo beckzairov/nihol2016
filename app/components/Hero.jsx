@@ -52,7 +52,7 @@ export default function Hero() {
                 transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
                 className="absolute bottom-4 left-1/2 transform -translate-x-1/2"
             >
-                <a href="#about" className="text-white text-sm">↓ Scroll Down</a>
+                <a href="#About" className="text-white text-sm">↓ Scroll Down</a>
             </motion.div>
         </section>
     );
