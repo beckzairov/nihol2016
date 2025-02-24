@@ -15,7 +15,7 @@ export default function LanguageSwitcher() {
   ];
 
   // Get current language
-  const currentLang = languages.find((lang) => lang.code === i18n.language) || languages[0];
+  const currentLang = languages.find((lang) => lang.code === i18n.language) || languages[1];
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
