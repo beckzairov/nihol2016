@@ -3,16 +3,16 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const allImages = [
-    { id: 1, src: '/gallery/image1.jpg', alt: 'Image 1' },
-    { id: 2, src: '/gallery/image2.jpg', alt: 'Image 2' },
-    { id: 3, src: '/gallery/image3.jpg', alt: 'Image 3' },
-    { id: 4, src: '/gallery/image4.jpg', alt: 'Image 4' },
-    { id: 5, src: '/gallery/image5.jpg', alt: 'Image 5' },
-    { id: 6, src: '/gallery/image1.jpg', alt: 'Image 6' },
-    { id: 7, src: '/gallery/image2.jpg', alt: 'Image 7' },
-    { id: 8, src: '/gallery/image3.jpg', alt: 'Image 8' },
-    { id: 9, src: '/gallery/image4.jpg', alt: 'Image 9' },
-    { id: 10, src: '/gallery/image5.jpg', alt: 'Image 10' },
+    { id: 1, src: '/gallery/IMG_3041.jpg', alt: 'Image 1' },
+    { id: 2, src: '/gallery/IMG_3042.jpg', alt: 'Image 2' },
+    { id: 3, src: '/gallery/IMG_3045.jpg', alt: 'Image 3' },
+    { id: 4, src: '/gallery/IMG_3046.jpg', alt: 'Image 4' },
+    { id: 5, src: '/gallery/IMG_3049.jpg', alt: 'Image 5' },
+    { id: 6, src: '/gallery/IMG_3052.jpg', alt: 'Image 6' },
+    // { id: 7, src: '/gallery/image2.jpg', alt: 'Image 7' },
+    // { id: 8, src: '/gallery/image3.jpg', alt: 'Image 8' },
+    // { id: 9, src: '/gallery/image4.jpg', alt: 'Image 9' },
+    // { id: 10, src: '/gallery/image5.jpg', alt: 'Image 10' },
 ];
 
 const batchSize = 6; // Load 6 images per batch

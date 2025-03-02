@@ -1,25 +1,26 @@
 'use client';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
 const logos = [
-    '/partners/hazera-low.svg',
-    '/partners/hazera-low.svg',
-    '/partners/hazera-low.svg',
-    '/partners/hazera-low.svg',
-    '/partners/hazera-low.svg',
-    '/partners/hazera-low.svg',
-    '/partners/hazera-low.svg',
-    '/partners/hazera-low.svg',
-    '/partners/hazera-low.svg',
-    '/partners/hazera-low.svg',
+    '/partners/hazera.svg',
+    '/partners/enza.svg',
+    '/partners/fit6.svg',
+    '/partners/dutch-plantin.svg',
+    '/partners/meristem.svg',
+    '/partners/pipelife.svg',
+    '/partners/has.svg',
 ];
 
 export default function Partners() {
+    const { t } = useTranslation();
+
     return (
-        <section className="py-24 bg-gray-100 relative">
+        <section className="py-10 bg-gray-100">
+            {/* Section Title */}
             <div className="container mx-auto text-center mb-6">
-                <h2 className="text-4xl font-medium text-[#474747]">Our Partners</h2>
-                {/* <p className="text-gray-600 text-xl mt-2">Trusted by leading brands in agriculture and sustainability.</p> */}
+                <h2 className="text-4xl font-bold text-gray-900">{t('partners.title')}</h2>
+                <p className="text-gray-600 mt-2">{t('partners.description')}</p>
             </div>
 
             <div className="relative overflow-hidden">

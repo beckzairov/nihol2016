@@ -7,15 +7,39 @@
       "language": "Language"
     },
     "hero": {
-      "title": "Discover Amazing Places",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Nihol Project",
+      "description": "Since 2016, Nihol 2016 has been one of the leading distributors in the Tajikistan market. We have established a strong distribution network covering all regions of the country. By purchasing products directly from manufacturers, we efficiently and promptly deliver them to our customers across Tajikistan.\nOur team consists of 55 qualified employees, including sales agents, supervisors, and couriers.",
       "explore": "Explore More"
+    },
+    "partners": {
+        "title": "Our Partners",
+        "description": "Trusted by leading brands in agriculture and sustainability."
+    },
+    "about": {
+        "title": "About Us",
+        "story_title": "Our Story",
+        "story_description": "Founded with a vision to revolutionize agriculture, our mission is to bring sustainable solutions to farmers worldwide. Our innovative approach ensures higher yields while preserving natural resources.",
+        "mission_title": "Our Mission",
+        "mission_description": "We strive to empower farmers with the latest technology and sustainable practices. Our products are designed to enhance productivity while ensuring environmental safety.",
+        "goal_title": "Our Goal",
+        "goal_description": "To become a local market leader by providing our clients with consistent support and high-quality products. Partnering with Nihol 2016 guarantees quality, reliability, and efficiency!"
     },
     "features": {
       "title": "Features",
       "fast": "Fast",
       "responsive": "Responsive",
       "customizable": "Customizable"
+    },
+    "footer": {
+      "quick_links_title": "Quick Links",
+      "home": "Home",
+      "about_us": "About Us",
+      "products": "Products",
+      "contact": "Contact Us",
+      "follow_us": "Follow Us",
+      "back_to_top": "Back to Top",
+      "rights": "All rights reserved.",
+      "company_info": "ООО \"Nihol\" 2016, registered in 2016 in Dushanbe, Tajikistan at N. Sino, R. Nabieva 218."
     }
   }
   

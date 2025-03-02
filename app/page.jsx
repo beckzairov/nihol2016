@@ -20,7 +20,7 @@ export default function HomePage() {
       <About/>
       <Partners/>
       {/* Features Section */}
-      <ImageGallery/>
+      {/* <ImageGallery/> */}
       <ClientTestimonials/>
       <StayInformed/>
     </div>
