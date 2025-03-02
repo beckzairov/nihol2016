@@ -4,7 +4,7 @@ import Link from 'next/link';
 // app/components/Navbar.js
 export default function Navbar() {
     return (
-      <nav className="text-white fixed top-0 left-0 right-0 z-50 backdrop-blur-md shadow-md">
+      <nav className="text-white fixed top-0 left-0 right-0 z-50 bg-green-700 shadow-md">
         <div className="container mx-auto flex justify-between items-center py-4 px-6">
           <Link href="/" className="text-xl font-bold">
             <img
