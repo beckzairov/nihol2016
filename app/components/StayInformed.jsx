@@ -1,13 +1,15 @@
 'use client';
 import { useState } from 'react';
+import { useTranslation } from "react-i18next";
 
 export default function StayInformed() {
+    const { t } = useTranslation(); // Get translations
     const [email, setEmail] = useState('');
     const [status, setStatus] = useState('');
 
     const handleSubscribe = async () => {
         if (!email || !email.includes('@')) {
-            setStatus('Please enter a valid email address.');
+            setStatus(t('stay_informed.invalid_email'));
             return;
         }
 
@@ -19,19 +21,20 @@ export default function StayInformed() {
             });
 
             if (response.ok) {
-                setStatus('Thank you for subscribing! You will receive updates soon.');
+                setStatus(t('stay_informed.success'));
                 setEmail('');
             } else {
-                setStatus('Failed to subscribe. Please try again later.');
+                setStatus(t('stay_informed.failure'));
             }
         } catch (error) {
-            setStatus('Error occurred. Please try again.');
+            setStatus(t('stay_informed.error'));
             console.error(error);
         }
     };
 
     return (
         <section
+            id="contact"
             className="relative py-80 bg-cover bg-center"
             style={{ backgroundImage: "url('/background-image.jpg')" }}
         >
@@ -41,9 +44,9 @@ export default function StayInformed() {
             <div className="relative z-10 flex flex-col justify-center items-center text-center px-4">
                 {/* Heading and Paragraph Above the Card */}
                 <div className="mb-24 max-w-3xl">
-                    <h1 className="text-6xl font-regular text-white">Follow Precision Agriculture</h1>
+                    <h1 className="text-6xl font-regular text-white">{t('stay_informed.title')}</h1>
                     <p className="text-2xl text-white mt-8">
-                        Stay ahead with the latest product launches! Explore innovative ideas, fresh designs, and creative trends to fuel your inspiration.
+                        {t('stay_informed.description')}
                     </p>
                 </div>
 
@@ -51,7 +54,7 @@ export default function StayInformed() {
                 <div className="bg-white/40 rounded-3xl p-12 max-w-2xl w-full">
                     {/* Inner Main Card */}
                     <div className="bg-white rounded-3xl p-6 shadow-lg">
-                        <h2 className="text-3xl font-bold text-[#154926] mb-4 text-left">Stay Informed!</h2>
+                        <h2 className="text-3xl font-bold text-[#154926] mb-4 text-left">{t('stay_informed.subtitle')}</h2>
 
                         {/* Email Input and Subscribe Button */}
                         <div className="flex items-center">
@@ -60,14 +63,14 @@ export default function StayInformed() {
                                     type="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
-                                    placeholder="Enter your email"
+                                    placeholder={t('stay_informed.placeholder')}
                                     className="w-full rounded-full py-3 px-4 text-gray-800 border border-gray-300 focus:outline-none"
                                 />
                                 <button
                                     onClick={handleSubscribe}
                                     className="absolute top-0 right-0 h-full bg-green-600 text-white px-6 rounded-full hover:bg-green-500 transition"
                                 >
-                                    Subscribe
+                                    {t('stay_informed.subscribe')}
                                 </button>
                             </div>
                         </div>

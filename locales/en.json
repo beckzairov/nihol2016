@@ -30,6 +30,17 @@
       "responsive": "Responsive",
       "customizable": "Customizable"
     },
+    "stay_informed": {
+        "title": "Follow Precision Agriculture",
+        "description": "Stay ahead with the latest product launches! Explore innovative ideas, fresh designs, and creative trends to fuel your inspiration.",
+        "subtitle": "Stay Informed!",
+        "placeholder": "Enter your email",
+        "subscribe": "Subscribe",
+        "invalid_email": "Please enter a valid email address.",
+        "success": "Thank you for subscribing! You will receive updates soon.",
+        "failure": "Failed to subscribe. Please try again later.",
+        "error": "Error occurred. Please try again."
+    },
     "footer": {
       "quick_links_title": "Quick Links",
       "home": "Home",

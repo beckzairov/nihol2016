@@ -12,7 +12,7 @@ if (!i18n.isInitialized) { // Prevent multiple initializations
       en: { translation: en },
       ru: { translation: ru },
     },
-    lng: "uz", // Default language
+    lng: "ru", // Default language
     fallbackLng: "en",
     interpolation: { escapeValue: false },
   });
