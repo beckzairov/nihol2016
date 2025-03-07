@@ -54,6 +54,16 @@ export default function Navbar() {
                     <li>
                         {/* Use handleScroll for smooth navigation */}
                         <a
+                            href="/#about"
+                            onClick={(e) => handleScroll(e, "about")}
+                            className="hover:text-blue-500 transition cursor-pointer"
+                        >
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        {/* Use handleScroll for smooth navigation */}
+                        <a
                             href="/#contact"
                             onClick={(e) => handleScroll(e, "contact")}
                             className="hover:text-blue-500 transition cursor-pointer"

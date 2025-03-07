@@ -6,7 +6,9 @@ export default function AboutUs() {
     const { t } = useTranslation();
 
     return (
-        <section className="py-20 px-4 relative">
+        <section
+            id="about" 
+            className="py-20 px-4 relative">
             <h1 className="text-4xl font-bold text-center mb-12">{t('about.title')}</h1>
 
             {/* Timeline Container */}
