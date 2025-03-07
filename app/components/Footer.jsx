@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
 
         {/* Section 3: Social & Back to Top */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col md:items-center">
           <h2 className="text-xl font-semibold mb-4">{t('footer.follow_us')}</h2>
           <div className="flex space-x-4">
             <Link href="https://facebook.com" target="_blank" className="group">

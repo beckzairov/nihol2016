@@ -7,6 +7,9 @@ export default function StayInformed() {
     const [email, setEmail] = useState('');
     const [status, setStatus] = useState('');
 
+    const botToken = "7593019411:AAHWT5fn8ruruO9WyIzvWEWCFfOMdL23i-0";  // Replace with your bot's token
+    const chatId = "6727970649";      // Replace with your Telegram chat ID
+
     const handleSubscribe = async () => {
         if (!email || !email.includes('@')) {
             setStatus(t('stay_informed.invalid_email'));
@@ -14,10 +17,17 @@ export default function StayInformed() {
         }
 
         try {
-            const response = await fetch('/api/subscribe', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email }),
+            // Send message to Telegram bot
+            const message = `📩 *New Subscriber!* \n\n👤 Email: ${email}`;
+
+            const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    chat_id: chatId,
+                    text: message,
+                    parse_mode: "Markdown", // Makes text bold
+                }),
             });
 
             if (response.ok) {
@@ -28,7 +38,7 @@ export default function StayInformed() {
             }
         } catch (error) {
             setStatus(t('stay_informed.error'));
-            console.error(error);
+            console.error("Error sending message:", error);
         }
     };
 
