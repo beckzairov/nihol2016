@@ -29,7 +29,7 @@ export default function Hero() {
                         {t('hero.description', 'Bringing you fresh, organic, and sustainable agricultural products from our farms to your table.')}
                     </p>
                     {/* Buttons */}
-                    <div className="mt-8 flex flex-wrap gap-4">
+                    {/* <div className="mt-8 flex flex-wrap gap-4">
                         <button
                             className="px-8 py-3 bg-green-600 text-white rounded-full shadow-lg hover:bg-green-500 transition-all hover:scale-110">
                             {t('hero.freeTrial', 'Get Started')}
@@ -40,7 +40,7 @@ export default function Hero() {
                         >
                             {t('hero.seeMore', 'See Products')}
                         </button>
-                    </div>
+                    </div> */}
                 </div>
 
             </motion.div>

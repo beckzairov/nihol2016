@@ -6,8 +6,8 @@ import Hero from '@/app/components/Hero';
 import About from './components/About';
 import Partners from './components/Partners';
 import StayInformed from './components/StayInformed';
-import ClientTestimonials from './components/ClientTestimonials';
 import ImageGallery from './components/ImageGallery';
+import OurPartners from './components/OurPartners';
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -21,7 +21,7 @@ export default function HomePage() {
       <Partners/>
       {/* Features Section */}
       {/* <ImageGallery/> */}
-      <ClientTestimonials/>
+      <OurPartners/>
       <StayInformed/>
     </div>
   );

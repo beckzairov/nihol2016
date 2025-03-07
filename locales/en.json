@@ -15,6 +15,17 @@
         "title": "Our Partners",
         "description": "Trusted by leading brands in agriculture and sustainability."
     },
+    "our_partners": {
+        "heading_prefix": "Briefly",
+        "heading_italic": "About",
+        "heading_suffix": "Our Partners",
+        "Hazera": "A leader in vegetable breeding, providing high-quality seeds worldwide.",
+        "Enza Zaden": "Innovating seed solutions to enhance global food security.",
+        "Fitó": "Specializing in crop improvement with cutting-edge agricultural solutions.",
+        "Dutch Plantin": "Sustainable cocopeat solutions for modern agriculture.",
+        "Meristem": "Enhancing soil and plant health through innovative products.",
+        "Pipelife": "A global provider of sustainable piping systems."
+    },
     "about": {
         "title": "About Us",
         "story_title": "Our Story",
