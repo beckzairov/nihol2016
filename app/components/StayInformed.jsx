@@ -8,7 +8,7 @@ export default function StayInformed() {
     const [status, setStatus] = useState('');
 
     const botToken = "7593019411:AAHWT5fn8ruruO9WyIzvWEWCFfOMdL23i-0";  // Replace with your bot's token
-    const chatId = "6727970649";      // Replace with your Telegram chat ID
+    const chatId = "6005734526";      // Replace with your Telegram chat ID
 
     const handleSubscribe = async () => {
         if (!email || !email.includes('@')) {
