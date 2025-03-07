@@ -1,10 +1,12 @@
 "use client";
 import { usePathname } from 'next/navigation'; // Import usePathname for active links
+import { useTranslation } from "react-i18next"; // Import translation hook
 import LanguageSwitcher from "./LanguageSwitcher";
 import Link from 'next/link';
 
 export default function Navbar() {
     const pathname = usePathname(); // Get the current route
+    const { t } = useTranslation(); // Get translations
 
     const handleScroll = (event, sectionId) => {
         event.preventDefault(); // Prevent full page reload
@@ -35,7 +37,7 @@ export default function Navbar() {
                     {pathname !== "/" && (
                         <li>
                             <Link href="/" className="hover:text-blue-500 transition">
-                                Home
+                                {t('navbar.home')}
                             </Link>
                         </li>
                     )}
@@ -47,7 +49,7 @@ export default function Navbar() {
                                 pathname === "/products" ? "text-yellow-400 font-semibold" : "hover:text-blue-500"
                             }`}
                         >
-                            Products
+                            {t('navbar.products')}
                         </Link>
                     </li>
 
@@ -58,7 +60,7 @@ export default function Navbar() {
                             onClick={(e) => handleScroll(e, "about")}
                             className="hover:text-blue-500 transition cursor-pointer"
                         >
-                            About Us
+                            {t('navbar.about')}
                         </a>
                     </li>
                     <li>
@@ -68,7 +70,7 @@ export default function Navbar() {
                             onClick={(e) => handleScroll(e, "contact")}
                             className="hover:text-blue-500 transition cursor-pointer"
                         >
-                            Contact
+                            {t('navbar.contact')}
                         </a>
                     </li>
 

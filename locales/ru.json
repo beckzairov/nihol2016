@@ -1,9 +1,9 @@
 {
     "navbar": {
       "home": "Главная",
-      "features": "Особенности",
-      "testimonials": "Отзывы",
-      "contact": "Контакт",
+      "products": "Продукты",
+      "about": "О нас",
+      "contact": "Контакты",
       "language": "Язык"
     },
     "hero": {

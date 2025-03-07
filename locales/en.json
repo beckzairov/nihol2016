@@ -1,8 +1,8 @@
 {
     "navbar": {
       "home": "Home",
-      "features": "Features",
-      "testimonials": "Testimonials",
+      "products": "Products",
+      "about": "About Us",
       "contact": "Contact",
       "language": "Language"
     },
