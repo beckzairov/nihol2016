@@ -1,48 +1,72 @@
-"use client"; // Ensure this runs on the client side
-
-import { useState } from "react";
+"use client";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import "../../i18n"; // Import i18n only here
-
+import { FiCheck, FiChevronDown, FiGlobe } from "react-icons/fi";
+import "../../i18n";
 export default function LanguageSwitcher() {
   const { i18n } = useTranslation();
-  const [isOpen, setIsOpen] = useState(false);
-
-  // Store languages & flag icons
-  const languages = [
-    { code: "ru", label: "Russian", flag: "/icons/ru.png" },
-    { code: "en", label: "English", flag: "/icons/en.png" },
-  ];
-
-  // Get current language
-  const currentLang = languages.find((lang) => lang.code === i18n.language) || languages[1];
-
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    setIsOpen(false); // Close dropdown after selection
+  const [open, setOpen] = useState(false);
+  const root = useRef(null);
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("nihol-language");
+      if (saved === "en" || saved === "ru") i18n.changeLanguage(saved);
+    } catch {
+      /* Storage is optional. */
+    }
+  }, [i18n]);
+  useEffect(() => {
+    document.documentElement.lang = i18n.resolvedLanguage || "ru";
+  }, [i18n.resolvedLanguage]);
+  useEffect(() => {
+    const close = (event) => {
+      if (!root.current?.contains(event.target)) setOpen(false);
+      if (event.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("pointerdown", close);
+    document.addEventListener("keydown", close);
+    return () => {
+      document.removeEventListener("pointerdown", close);
+      document.removeEventListener("keydown", close);
+    };
+  }, []);
+  const language = i18n.resolvedLanguage === "en" ? "en" : "ru";
+  const chooseLanguage = (nextLanguage) => {
+    i18n.changeLanguage(nextLanguage);
+    setOpen(false);
+    try {
+      localStorage.setItem("nihol-language", nextLanguage);
+    } catch {
+      /* Storage is optional. */
+    }
   };
-
   return (
-    <div className="relative inline-block z-40">
-      {/* Dropdown Button */}
+    <div className="language-picker" ref={root}>
       <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2  px-4 py-2"
+        type="button"
+        className="language-trigger"
+        aria-label="Language / Язык"
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        onClick={() => setOpen((value) => !value)}
       >
-        <img src={currentLang.flag} alt={currentLang.label} className="w-6 h-6" />
+        <FiGlobe aria-hidden="true" />
+        <span>{language.toUpperCase()}</span>
+        <FiChevronDown className={open ? "is-open" : ""} aria-hidden="true" />
       </button>
-
-      {/* Dropdown Menu */}
-      {isOpen && (
-        <div className="absolute right-0 mt-2 w-32  border rounded-md shadow-lg">
-          {languages.map((lang) => (
+      {open && (
+        <div className="language-menu" role="listbox" aria-label="Language / Язык">
+          {[{ id: "ru", label: "Русский", short: "RU" }, { id: "en", label: "English", short: "EN" }].map((option) => (
             <button
-              key={lang.code}
-              onClick={() => changeLanguage(lang.code)}
-              className="flex items-center w-full px-3 py-2 hover:bg-gray-100"
+              type="button"
+              role="option"
+              aria-selected={language === option.id}
+              className={language === option.id ? "is-selected" : ""}
+              key={option.id}
+              onClick={() => chooseLanguage(option.id)}
             >
-              <img src={lang.flag} alt={lang.label} className="w-6 h-6 mr-2" />
-              {lang.label}
+              <span><b>{option.short}</b>{option.label}</span>
+              {language === option.id && <FiCheck aria-hidden="true" />}
             </button>
           ))}
         </div>

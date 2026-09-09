@@ -1,0 +1,314 @@
+INFO Draco mesh compression is available, use library at C:\Users\user\.codex\tools\blender\blender-4.5.13-windows-x64\4.5\scripts\addons_core\io_scene_gltf2\extern_draco.dll
+14:15:07 | INFO: Starting glTF 2.0 export
+14:15:07 | INFO: Extracting primitive: Topsoil / cultivated ridges
+14:15:07 | INFO: Primitives created: 1
+14:15:07 | INFO: Extracting primitive: Subsoil / loam
+14:15:07 | INFO: Primitives created: 1
+14:15:07 | INFO: Extracting primitive: Parent layer / mineral
+14:15:07 | INFO: Primitives created: 1
+14:15:07 | INFO: Extracting primitive: Icosphere
+14:15:07 | INFO: Primitives created: 1
+14:15:07 | INFO: Finished glTF 2.0 export in 0.03299975395202637 s
+Blender 4.5.13 LTS (hash daeeeca98fb0 built 2026-08-25 01:50:50)
+Fra:1 Mem:20.96M (Peak 20.96M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Topsoil / cultivated ridges
+Fra:1 Mem:20.96M (Peak 20.96M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Subsoil / loam
+Fra:1 Mem:20.96M (Peak 20.96M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Soil aggregates and exposed mineral inclusions
+Fra:1 Mem:21.48M (Peak 21.48M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Area.002
+Fra:1 Mem:23.00M (Peak 23.00M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:22.98M (Peak 23.00M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Mineral parent material_albedo
+Fra:1 Mem:22.98M (Peak 23.00M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Loamy subsoil_albedo
+Fra:1 Mem:25.47M (Peak 25.99M) | Time:00:00.00 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:25.47M (Peak 25.99M) | Time:00:00.00 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:25.47M (Peak 25.99M) | Time:00:00.00 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:25.47M (Peak 25.99M) | Time:00:00.00 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:25.55M (Peak 25.99M) | Time:00:00.00 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:25.55M (Peak 25.99M) | Time:00:00.00 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:25.55M (Peak 25.99M) | Time:00:00.00 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:25.55M (Peak 25.99M) | Time:00:00.00 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:25.55M (Peak 25.99M) | Time:00:00.00 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:25.55M (Peak 25.99M) | Time:00:00.00 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:25.55M (Peak 25.99M) | Time:00:00.00 | Mem:3.01M, Peak:3.01M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:25.55M (Peak 25.99M) | Time:00:00.00 | Mem:3.01M, Peak:3.01M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:25.56M (Peak 25.99M) | Time:00:00.00 | Mem:3.01M, Peak:3.01M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:25.56M (Peak 25.99M) | Time:00:00.00 | Mem:3.01M, Peak:3.01M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:25.56M (Peak 25.99M) | Time:00:00.00 | Mem:3.01M, Peak:3.01M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:26.29M (Peak 26.29M) | Time:00:00.00 | Mem:3.01M, Peak:3.01M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:26.29M (Peak 26.29M) | Time:00:00.00 | Mem:3.74M, Peak:3.74M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:26.29M (Peak 26.29M) | Time:00:00.00 | Mem:3.74M, Peak:3.74M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:26.29M (Peak 26.29M) | Time:00:00.00 | Mem:4.58M, Peak:4.58M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:26.29M (Peak 26.29M) | Time:00:00.00 | Mem:5.60M, Peak:6.44M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:26.29M (Peak 26.29M) | Time:00:00.00 | Mem:5.60M, Peak:6.44M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:27.03M (Peak 27.03M) | Time:00:00.00 | Mem:5.60M, Peak:6.44M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:27.03M (Peak 27.03M) | Time:00:00.00 | Mem:6.34M, Peak:6.44M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:27.03M (Peak 27.03M) | Time:00:00.00 | Mem:6.34M, Peak:6.44M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:27.03M (Peak 27.03M) | Time:00:00.00 | Mem:6.34M, Peak:6.44M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:27.03M (Peak 27.03M) | Time:00:00.00 | Mem:6.34M, Peak:6.44M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:27.03M (Peak 27.03M) | Time:00:00.00 | Mem:6.34M, Peak:6.44M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:27.03M (Peak 27.03M) | Time:00:00.00 | Mem:6.42M, Peak:6.44M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:27.03M (Peak 27.03M) | Time:00:00.00 | Mem:6.42M, Peak:6.44M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:27.03M (Peak 27.03M) | Time:00:00.00 | Mem:6.42M, Peak:6.44M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:27.03M (Peak 27.03M) | Time:00:00.00 | Mem:6.42M, Peak:6.44M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:27.04M (Peak 27.04M) | Time:00:00.00 | Mem:6.34M, Peak:6.44M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:27.04M (Peak 27.04M) | Time:00:00.00 | Mem:6.43M, Peak:6.44M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:27.04M (Peak 27.04M) | Time:00:00.00 | Mem:6.43M, Peak:6.44M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:27.04M (Peak 27.04M) | Time:00:00.00 | Mem:6.43M, Peak:6.44M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:27.04M (Peak 27.04M) | Time:00:00.00 | Mem:6.43M, Peak:6.44M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:79.41M (Peak 79.41M) | Time:00:00.10 | Remaining:00:03.15 | Mem:58.63M, Peak:58.63M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:101.39M (Peak 134.35M) | Time:00:03.92 | Mem:58.63M, Peak:58.63M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:101.39M (Peak 134.35M) | Time:00:03.92 | Mem:58.63M, Peak:58.63M | Scene, ViewLayer | Finished
+Saved: 'C:\xampp\www\is\nihol2016\public\models\soil.png'
+Time: 00:04.02 (Saving: 00:00.09)
+
+
+Info: Saved as "soil.blend"
+NIHOL_ASSET_COMPLETE soil
+14:15:12 | INFO: Starting glTF 2.0 export
+14:15:12 | INFO: Extracting primitive: Cube.002
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Main irrigation pipe
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Blue compression coupling
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.001
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.002
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.003
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.004
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.005
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.006
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.007
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.008
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.009
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.010
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.011
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.012
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.013
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.014
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.015
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Blue compression coupling.001
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.016
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.017
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.018
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.019
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.020
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.021
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.022
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.023
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.024
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.025
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.026
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.027
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.028
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.029
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.030
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.031
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.032
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cube.003
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Drip outlet
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.033
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Icosphere.146
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Icosphere.147
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Icosphere.148
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Icosphere.149
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Icosphere.150
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Icosphere.151
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.034
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.035
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.036
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Extracting primitive: Cylinder.037
+14:15:12 | INFO: Primitives created: 1
+14:15:12 | INFO: Finished glTF 2.0 export in 0.04451465606689453 s
+Fra:1 Mem:27.53M (Peak 27.53M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cutaway ground
+Fra:1 Mem:27.53M (Peak 27.53M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip
+Fra:1 Mem:27.54M (Peak 27.54M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.002
+Fra:1 Mem:27.55M (Peak 27.55M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.004
+Fra:1 Mem:27.56M (Peak 27.56M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.009
+Fra:1 Mem:27.58M (Peak 27.58M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.013
+Fra:1 Mem:27.61M (Peak 27.60M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.014
+Fra:1 Mem:27.60M (Peak 27.60M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.016
+Fra:1 Mem:27.63M (Peak 27.63M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.018
+Fra:1 Mem:27.64M (Peak 27.64M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.019
+Fra:1 Mem:27.67M (Peak 27.67M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.020
+Fra:1 Mem:27.68M (Peak 27.68M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.022
+Fra:1 Mem:27.68M (Peak 27.68M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.023
+Fra:1 Mem:27.69M (Peak 27.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.024
+Fra:1 Mem:27.71M (Peak 27.71M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.025
+Fra:1 Mem:27.72M (Peak 27.72M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.027
+Fra:1 Mem:27.73M (Peak 27.73M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.028
+Fra:1 Mem:27.74M (Peak 27.74M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.029
+Fra:1 Mem:27.75M (Peak 27.75M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Coupling grip.031
+Fra:1 Mem:27.75M (Peak 27.75M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Valve stem
+Fra:1 Mem:27.80M (Peak 27.80M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Area.002
+Fra:1 Mem:27.81M (Peak 27.81M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Water drop.001
+Fra:1 Mem:27.81M (Peak 27.81M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Area.001
+Fra:1 Mem:27.81M (Peak 27.81M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Area
+Fra:1 Mem:27.81M (Peak 27.81M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Studio floor
+Fra:1 Mem:27.81M (Peak 27.81M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Water drop.002
+Fra:1 Mem:27.83M (Peak 27.83M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Water drop.003
+Fra:1 Mem:27.85M (Peak 27.85M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Water drop.004
+Fra:1 Mem:27.85M (Peak 27.85M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Water at soil surface
+Fra:1 Mem:27.88M (Peak 27.88M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Pressure gauge housing
+Fra:1 Mem:27.91M (Peak 27.91M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Gauge face
+Fra:1 Mem:28.08M (Peak 28.08M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:27.89M (Peak 28.08M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Irrigation soil_albedo
+Fra:1 Mem:27.04M (Peak 28.90M) | Time:00:00.00 | Mem:1.00M, Peak:1.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:27.04M (Peak 28.90M) | Time:00:00.00 | Mem:1.00M, Peak:1.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:27.04M (Peak 28.90M) | Time:00:00.00 | Mem:1.00M, Peak:1.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:27.04M (Peak 28.90M) | Time:00:00.00 | Mem:1.00M, Peak:1.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:27.13M (Peak 28.90M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:27.13M (Peak 28.90M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:27.13M (Peak 28.90M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:27.13M (Peak 28.90M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:27.13M (Peak 28.90M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:27.13M (Peak 28.90M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:27.14M (Peak 28.90M) | Time:00:00.00 | Mem:1.02M, Peak:1.02M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:27.14M (Peak 28.90M) | Time:00:00.00 | Mem:1.02M, Peak:1.02M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:27.14M (Peak 28.90M) | Time:00:00.00 | Mem:1.02M, Peak:1.02M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:27.14M (Peak 28.90M) | Time:00:00.00 | Mem:1.02M, Peak:1.02M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:27.14M (Peak 28.90M) | Time:00:00.00 | Mem:1.02M, Peak:1.02M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:27.23M (Peak 28.90M) | Time:00:00.00 | Mem:1.02M, Peak:1.02M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:27.22M (Peak 28.90M) | Time:00:00.00 | Mem:1.10M, Peak:1.10M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:27.22M (Peak 28.90M) | Time:00:00.00 | Mem:1.10M, Peak:1.10M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:27.22M (Peak 28.90M) | Time:00:00.00 | Mem:1.51M, Peak:1.51M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:27.22M (Peak 28.90M) | Time:00:00.00 | Mem:2.00M, Peak:2.40M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:27.22M (Peak 28.90M) | Time:00:00.00 | Mem:2.00M, Peak:2.40M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:27.58M (Peak 28.90M) | Time:00:00.00 | Mem:2.00M, Peak:2.40M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:27.58M (Peak 28.90M) | Time:00:00.00 | Mem:2.35M, Peak:2.40M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:27.58M (Peak 28.90M) | Time:00:00.00 | Mem:2.35M, Peak:2.40M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:27.58M (Peak 28.90M) | Time:00:00.00 | Mem:2.35M, Peak:2.40M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:27.58M (Peak 28.90M) | Time:00:00.00 | Mem:2.35M, Peak:2.40M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:27.58M (Peak 28.90M) | Time:00:00.00 | Mem:2.35M, Peak:2.40M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:27.58M (Peak 28.90M) | Time:00:00.00 | Mem:2.43M, Peak:2.43M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:27.58M (Peak 28.90M) | Time:00:00.00 | Mem:2.43M, Peak:2.43M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:27.58M (Peak 28.90M) | Time:00:00.00 | Mem:2.43M, Peak:2.43M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:27.58M (Peak 28.90M) | Time:00:00.00 | Mem:2.43M, Peak:2.43M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:27.59M (Peak 28.90M) | Time:00:00.00 | Mem:2.35M, Peak:2.43M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:27.59M (Peak 28.90M) | Time:00:00.00 | Mem:2.44M, Peak:2.44M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:27.59M (Peak 28.90M) | Time:00:00.00 | Mem:2.44M, Peak:2.44M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:27.59M (Peak 28.90M) | Time:00:00.00 | Mem:2.44M, Peak:2.44M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:27.59M (Peak 28.90M) | Time:00:00.00 | Mem:2.44M, Peak:2.44M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:79.96M (Peak 79.96M) | Time:00:00.10 | Remaining:00:02.92 | Mem:54.64M, Peak:54.64M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:101.94M (Peak 134.90M) | Time:00:03.79 | Mem:54.64M, Peak:54.64M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:101.94M (Peak 134.90M) | Time:00:03.79 | Mem:54.64M, Peak:54.64M | Scene, ViewLayer | Finished
+Saved: 'C:\xampp\www\is\nihol2016\public\models\water.png'
+Time: 00:03.83 (Saving: 00:00.04)
+
+
+Info: Saved as "water.blend"
+NIHOL_ASSET_COMPLETE water
+14:15:18 | INFO: Starting glTF 2.0 export
+14:15:18 | INFO: Extracting primitive: Open woven fertilizer sack
+14:15:18 | INFO: Primitives created: 2
+14:15:18 | INFO: Extracting primitive: Rolled bag lip
+14:15:18 | INFO: Primitives created: 1
+14:15:18 | INFO: Extracting primitive: Icosphere.152
+14:15:18 | INFO: Primitives created: 1
+14:15:18 | INFO: Extracting primitive: Icosphere.153
+14:15:18 | INFO: Primitives created: 1
+14:15:18 | INFO: Extracting primitive: Icosphere.154
+14:15:18 | INFO: Primitives created: 1
+14:15:18 | INFO: Extracting primitive: NPK
+14:15:18 | INFO: Primitives created: 1
+14:15:18 | INFO: Extracting primitive: FERTILIZER
+14:15:18 | INFO: Primitives created: 1
+14:15:18 | INFO: Finished glTF 2.0 export in 0.024077653884887695 s
+Fra:1 Mem:31.02M (Peak 31.02M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Open woven fertilizer sack
+Fra:1 Mem:31.02M (Peak 31.02M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Granular fertilizer 1
+Fra:1 Mem:31.13M (Peak 31.13M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | NPK
+Fra:1 Mem:31.23M (Peak 31.23M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Area
+Fra:1 Mem:31.33M (Peak 31.33M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Area.002
+Fra:1 Mem:31.80M (Peak 31.80M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:31.76M (Peak 31.80M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Woven fertilizer sack_albedo
+Fra:1 Mem:32.06M (Peak 32.77M) | Time:00:00.00 | Mem:1.00M, Peak:1.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:32.06M (Peak 32.77M) | Time:00:00.00 | Mem:1.00M, Peak:1.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:32.06M (Peak 32.77M) | Time:00:00.00 | Mem:1.00M, Peak:1.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:32.06M (Peak 32.77M) | Time:00:00.00 | Mem:1.00M, Peak:1.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:32.14M (Peak 32.77M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:32.14M (Peak 32.77M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:32.14M (Peak 32.77M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:32.14M (Peak 32.77M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:32.14M (Peak 32.77M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:32.14M (Peak 32.77M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:32.15M (Peak 32.77M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:32.15M (Peak 32.77M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:32.15M (Peak 32.77M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:32.15M (Peak 32.77M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:32.15M (Peak 32.77M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:32.35M (Peak 32.77M) | Time:00:00.00 | Mem:1.01M, Peak:1.01M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:32.35M (Peak 32.77M) | Time:00:00.00 | Mem:1.22M, Peak:1.22M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:32.35M (Peak 32.77M) | Time:00:00.00 | Mem:1.22M, Peak:1.22M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:32.35M (Peak 32.77M) | Time:00:00.00 | Mem:1.67M, Peak:1.67M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:32.35M (Peak 32.77M) | Time:00:00.00 | Mem:2.17M, Peak:2.63M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:32.35M (Peak 32.77M) | Time:00:00.00 | Mem:2.17M, Peak:2.63M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:32.79M (Peak 32.79M) | Time:00:00.00 | Mem:2.17M, Peak:2.63M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:32.79M (Peak 32.79M) | Time:00:00.00 | Mem:2.61M, Peak:2.63M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:32.79M (Peak 32.79M) | Time:00:00.00 | Mem:2.61M, Peak:2.63M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:32.79M (Peak 32.79M) | Time:00:00.00 | Mem:2.61M, Peak:2.63M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:32.79M (Peak 32.79M) | Time:00:00.00 | Mem:2.61M, Peak:2.63M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:32.79M (Peak 32.79M) | Time:00:00.00 | Mem:2.61M, Peak:2.63M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:32.79M (Peak 32.79M) | Time:00:00.00 | Mem:2.69M, Peak:2.69M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:32.79M (Peak 32.79M) | Time:00:00.00 | Mem:2.69M, Peak:2.69M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:32.79M (Peak 32.79M) | Time:00:00.00 | Mem:2.69M, Peak:2.69M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:32.79M (Peak 32.79M) | Time:00:00.00 | Mem:2.69M, Peak:2.69M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:32.79M (Peak 32.79M) | Time:00:00.00 | Mem:2.61M, Peak:2.69M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:32.79M (Peak 32.79M) | Time:00:00.00 | Mem:2.69M, Peak:2.69M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:32.79M (Peak 32.79M) | Time:00:00.00 | Mem:2.69M, Peak:2.69M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:32.79M (Peak 32.79M) | Time:00:00.00 | Mem:2.69M, Peak:2.69M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:32.79M (Peak 32.79M) | Time:00:00.00 | Mem:2.69M, Peak:2.69M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:85.17M (Peak 85.17M) | Time:00:00.09 | Remaining:00:02.90 | Mem:54.89M, Peak:54.89M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:107.14M (Peak 140.10M) | Time:00:03.76 | Mem:54.89M, Peak:54.89M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:107.14M (Peak 140.10M) | Time:00:03.76 | Mem:54.89M, Peak:54.89M | Scene, ViewLayer | Finished
+Saved: 'C:\xampp\www\is\nihol2016\public\models\nutrition.png'
+Time: 00:03.80 (Saving: 00:00.04)
+
+
+Info: Saved as "nutrition.blend"
+NIHOL_ASSET_COMPLETE nutrition
+
+Blender quit

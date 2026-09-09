@@ -1,18 +1,25 @@
-// import { notFound } from 'next/navigation';
-import Navbar from '@/app/components/Navbar';
-import './globals.css';
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import MotionProvider from "./components/MotionProvider";
+import "./globals.css";
 import "../i18n";
-import Footer from './components/Footer';
-
-
-export default async function LocaleLayout({ children }) {
-
+export const metadata = {
+  title: {
+    default: "Nihol 2016 — Agricultural solutions in Tajikistan",
+    template: "%s | Nihol 2016",
+  },
+  description:
+    "Seeds, growing substrates, nutrition and irrigation solutions. Nihol connects growers across Tajikistan with international manufacturers since 2016.",
+};
+export default function RootLayout({ children }) {
   return (
-    <html>
+    <html lang="ru">
       <body>
+        <MotionProvider>
           <Navbar />
           {children}
-          <Footer/>
+          <Footer />
+        </MotionProvider>
       </body>
     </html>
   );

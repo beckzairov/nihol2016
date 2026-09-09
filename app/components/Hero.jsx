@@ -1,59 +1,78 @@
-'use client';
-import { useTranslation } from "react-i18next";
-import { motion } from 'framer-motion';
-
+"use client";
+import { useRef } from "react";
+import HeroMedia from "./HeroMedia";
+import Link from "next/link";
+import { FiArrowDown, FiArrowUpRight, FiPause, FiPlay } from "react-icons/fi";
+import { useSiteMotion } from "./MotionProvider";
+import useSiteCopy from "../hooks/useSiteCopy";
 export default function Hero() {
-    const { t } = useTranslation();
-
-    return (
-        <section
-            className="relative h-screen bg-cover bg-center"
-            style={{ backgroundImage: "url('/farmfield.png')" }}
-        >
-            {/* Overlay for readability */}
-            <div className="absolute inset-0 bg-black/30"></div>
-
-            {/* Hero Content */}
-            <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="absolute inset-0 flex flex-col justify-center items-end text-left px-4 sm:px-8"
-            >
-                <div className="text-left">
-                    <h1 className="text-5xl font-extrabold text-white sm:text-4xl" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
-                        {t('hero.title', 'Harvest the Best of Nature')}
-                    </h1>
-
-                    <p className="mt-4 text-lg text-white max-w-2xl">
-                        {t('hero.description', 'Bringing you fresh, organic, and sustainable agricultural products from our farms to your table.')}
-                    </p>
-                    {/* Buttons */}
-                    {/* <div className="mt-8 flex flex-wrap gap-4">
-                        <button
-                            className="px-8 py-3 bg-green-600 text-white rounded-full shadow-lg hover:bg-green-500 transition-all hover:scale-110">
-                            {t('hero.freeTrial', 'Get Started')}
-                        </button>
-
-                        <button
-                            className="px-8 py-3 border border-white text-white rounded-full shadow-lg hover:bg-white hover:text-green-600 transition-all hover:scale-110"
-                        >
-                            {t('hero.seeMore', 'See Products')}
-                        </button>
-                    </div> */}
-                </div>
-
-            </motion.div>
-
-            {/* Scroll Down Indicator */}
-            <motion.div
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
-                className="absolute bottom-4 left-1/2 transform -translate-x-1/2"
-            >
-                <a href="#about" className="text-white text-sm">↓ Scroll Down</a>
-            </motion.div>
-        </section>
+  const copy = useSiteCopy();
+  const { enabled, toggle } = useSiteMotion();
+  const section = useRef(null);
+  function move(event) {
+    if (!enabled || event.pointerType !== "mouse") return;
+    const bounds = event.currentTarget.getBoundingClientRect();
+    section.current.style.setProperty(
+      "--pointer-x",
+      `${((event.clientX - bounds.left) / bounds.width - 0.5) * 14}px`,
     );
+    section.current.style.setProperty(
+      "--pointer-y",
+      `${((event.clientY - bounds.top) / bounds.height - 0.5) * 10}px`,
+    );
+  }
+  return (
+    <section className="hero" ref={section} onPointerMove={move}>
+      <HeroMedia />
+      <div className="hero-shade" />
+      <div className="section-shell hero-content">
+        <p className="eyebrow">
+          <span className="status-dot" />
+          {copy.eyebrow}
+        </p>
+        <h1>
+          {copy.title}
+          <br />
+          <span>{copy.accent}</span>
+        </h1>
+        <p className="hero-intro">{copy.intro}</p>
+        <div className="hero-links">
+          <Link href="/products" className="button button-lime">
+            {copy.explore}
+            <FiArrowUpRight />
+          </Link>
+          <a href="#about" className="text-link">
+            {copy.discover}
+            <FiArrowUpRight />
+          </a>
+        </div>
+      </div>
+      <div className="landscape-note" aria-hidden="true">
+        <span className="note-cross">+</span>
+        <span>
+          NIHOL / 2016
+          <br />
+          EARTH. WATER. POSSIBILITY.
+        </span>
+      </div>
+      <div className="hero-bottom section-shell">
+        <a href="#solutions" className="scroll-cue">
+          <span className="round-icon">
+            <FiArrowDown />
+          </span>
+          {copy.scroll}
+        </a>
+        <span className="hero-since">{copy.since}</span>
+        <button
+          type="button"
+          className="motion-toggle"
+          onClick={toggle}
+          aria-label={enabled ? copy.pause : copy.play}
+          title={enabled ? copy.pause : copy.play}
+        >
+          {enabled ? <FiPause /> : <FiPlay />}
+        </button>
+      </div>
+    </section>
+  );
 }

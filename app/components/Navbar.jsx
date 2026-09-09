@@ -1,84 +1,87 @@
 "use client";
-import { usePathname } from 'next/navigation'; // Import usePathname for active links
-import { useTranslation } from "react-i18next"; // Import translation hook
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { FiArrowUpRight, FiMenu, FiX } from "react-icons/fi";
 import LanguageSwitcher from "./LanguageSwitcher";
-import Link from 'next/link';
-
+import useSiteCopy from "../hooks/useSiteCopy";
 export default function Navbar() {
-    const pathname = usePathname(); // Get the current route
-    const { t } = useTranslation(); // Get translations
-
-    const handleScroll = (event, sectionId) => {
-        event.preventDefault(); // Prevent full page reload
-
-        if (pathname !== "/") {
-            // Redirect to home and then scroll
-            window.location.href = `/#${sectionId}`;
-        } else {
-            // Scroll smoothly to section if already on home page
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: "smooth" });
-            }
-        }
+  const copy = useSiteCopy();
+  const pathname = usePathname();
+  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    const close = (event) => {
+      if (event.key === "Escape") setOpen(false);
     };
-
-    return (
-        <nav className="text-white fixed top-0 left-0 right-0 z-50 bg-green-700 shadow-md">
-            <div className="container mx-auto flex justify-between items-center py-4 px-6">
-                {/* Logo */}
-                <Link href="/" className="text-xl font-bold">
-                    <img src="/nihol.svg" alt="logo" className="h-12" />
-                </Link>
-
-                {/* Navbar Links */}
-                <ul className="flex items-center space-x-6">
-                    {/* Show "Home" link only if NOT on Home Page */}
-                    {pathname !== "/" && (
-                        <li>
-                            <Link href="/" className="hover:text-blue-500 transition">
-                                {t('navbar.home')}
-                            </Link>
-                        </li>
-                    )}
-
-                    <li>
-                        <Link
-                            href="/products"
-                            className={`transition ${
-                                pathname === "/products" ? "text-yellow-400 font-semibold" : "hover:text-blue-500"
-                            }`}
-                        >
-                            {t('navbar.products')}
-                        </Link>
-                    </li>
-
-                    <li>
-                        {/* Use handleScroll for smooth navigation */}
-                        <a
-                            href="/#about"
-                            onClick={(e) => handleScroll(e, "about")}
-                            className="hover:text-blue-500 transition cursor-pointer"
-                        >
-                            {t('navbar.about')}
-                        </a>
-                    </li>
-                    <li>
-                        {/* Use handleScroll for smooth navigation */}
-                        <a
-                            href="/#contact"
-                            onClick={(e) => handleScroll(e, "contact")}
-                            className="hover:text-blue-500 transition cursor-pointer"
-                        >
-                            {t('navbar.contact')}
-                        </a>
-                    </li>
-
-                    <li>
-                        <LanguageSwitcher />
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    );
+    window.addEventListener("keydown", close);
+    return () => window.removeEventListener("keydown", close);
+  }, []);
+  const links = [
+    ["/products", copy.solutions],
+    ["/#about", copy.story],
+    ["/#partners", copy.partners],
+  ];
+  return (
+    <header className="site-header">
+      <a className="skip-link" href="#main-content">
+        {copy.skip}
+      </a>
+      <nav className="section-shell nav-inner" aria-label={copy.menu}>
+        <Link
+          href="/"
+          className="brand"
+          aria-label="Nihol 2016"
+          onClick={() => setOpen(false)}
+        >
+          <Image
+            src="/brand/nihol-logo-light.svg"
+            alt="Nihol"
+            width={232}
+            height={64}
+            priority
+          />
+          <span>2016</span>
+        </Link>
+        <div className="desktop-nav">
+          {links.map(([href, label]) => (
+            <Link
+              key={href}
+              href={href}
+              aria-current={pathname === href ? "page" : undefined}
+            >
+              {label}
+            </Link>
+          ))}
+        </div>
+        <div className="nav-actions">
+          <LanguageSwitcher />
+          <Link href="/#contact" className="nav-contact">
+            {copy.contact}
+            <FiArrowUpRight />
+          </Link>
+          <button
+            type="button"
+            className="menu-toggle"
+            onClick={() => setOpen(!open)}
+            aria-label={copy.menu}
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
+          >
+            {open ? <FiX /> : <FiMenu />}
+          </button>
+        </div>
+        {open && (
+          <div id="mobile-navigation" className="mobile-nav">
+            {[...links, ["/#contact", copy.contact]].map(([href, label]) => (
+              <Link key={href} href={href} onClick={() => setOpen(false)}>
+                {label}
+                <FiArrowUpRight />
+              </Link>
+            ))}
+          </div>
+        )}
+      </nav>
+    </header>
+  );
 }
