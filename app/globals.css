@@ -186,7 +186,8 @@ p {
   gap: 10px;
 }
 .brand img {
-  width: 136px;
+  width: 72px;
+  height: 72px;
   height: auto;
   object-fit: contain;
 }
@@ -1025,7 +1026,8 @@ p {
   gap: 60px;
 }
 .footer-main img {
-  width: 174px;
+    width: 112px;
+    height: 112px;
   height: auto;
   object-fit: contain;
 }

@@ -14,10 +14,10 @@ export default function Footer() {
           <div>
             <Link href="/" aria-label="Nihol 2016">
               <Image
-                src="/brand/nihol-logo-light.svg"
+                src="/brand/nihol-real-light.png"
                 alt="Nihol"
-                width={232}
-                height={64}
+                width={112}
+                height={112}
               />
             </Link>
             <p>{copy.footerLine}</p>

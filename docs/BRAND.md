@@ -43,3 +43,13 @@ readable type. No third-party artwork was copied into the logo or website.
 
 The Pinterest board page was unavailable directly; the Pinterest reference was
 reviewed through indexed image-search results.
+# Nihol brand assets
+
+The supplied Telegram JPG logos are kept as source references. `scripts/clean-logo-background.cjs` removes only the connected outer background: it removes the white surround from `IMG_3389.JPG` and the black surround from `IMG_3390.JPG`, while preserving the enclosed white field inside the green ring.
+
+The resulting transparent PNGs are:
+
+- `public/brand/nihol-real-light.png` — cleaned white-background source, used by the header and footer.
+- `public/brand/nihol-real-dark.png` — cleaned black-background source for dark or green applications.
+
+The JPG is not sent to the browser. The transparent PNGs keep the original mark and wordmark intact, including the white negative space that a generic background-removal service can incorrectly erase.

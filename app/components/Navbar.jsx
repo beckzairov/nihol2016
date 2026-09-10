@@ -35,10 +35,10 @@ export default function Navbar() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/brand/nihol-logo-light.svg"
+            src="/brand/nihol-real-light.png"
             alt="Nihol"
-            width={232}
-            height={64}
+            width={72}
+            height={72}
             priority
           />
           <span>2016</span>
