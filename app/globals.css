@@ -505,7 +505,7 @@ p {
 }
 .partner-logos {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: 44px;
 }
@@ -931,6 +931,38 @@ p {
   font-size: 17px;
   margin-top: 28px;
 }
+.partner-website {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  margin-top: 22px;
+  padding: 7px 7px 7px 16px;
+  border: 1px solid #b5c39d;
+  border-radius: 999px;
+  background: #f6f8ec;
+  color: #304c2a;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 180ms ease, color 180ms ease;
+}
+.partner-website > span:not(.partner-website-arrow) { overflow-wrap: anywhere; }
+.partner-website > svg { flex-shrink: 0; }
+.partner-website-arrow {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #dce8c8;
+  color: #304c2a;
+}
+.partner-website:hover { background: #304c2a; color: #fff; }
+.partner-website:focus-visible { outline: 3px solid #607c36; outline-offset: 4px; }
+.partner-wordmark { font-size: 32px; font-weight: 750; letter-spacing: -0.04em; color: #304c2a; }
+.partner-detail > .partner-wordmark { display: grid; place-items: center; height: 110px; margin-top: 35px; font-size: 64px; }
 .partner-pagination {
   margin-top: 35px;
   font-size: 12px;

@@ -231,14 +231,17 @@ export const siteCopy = {
   },
 };
 export const partners = [
-  { name: "Hazera", logo: "/partners/hazera.svg", key: "Hazera" },
-  { name: "Enza Zaden", logo: "/partners/enza.svg", key: "Enza Zaden" },
-  { name: "Fitó", logo: "/partners/fit6.svg", key: "Fitó" },
+  { name: "Hazera", logo: "/partners/hazera.svg", key: "Hazera", website: "https://www.hazera.com/" },
+  { name: "Enza Zaden", logo: "/partners/enza.svg", key: "Enza Zaden", website: "https://www.enzazaden.com/" },
+  { name: "Fitó", logo: "/partners/fit6.svg", key: "Fitó", website: "https://www.semillasfito.com/en/" },
   {
     name: "Dutch Plantin",
     logo: "/partners/dutch-plantin.svg",
     key: "Dutch Plantin",
+    website: "https://www.dutchplantin.com/en/",
   },
-  { name: "Meristem", logo: "/partners/meristem.svg", key: "Meristem" },
-  { name: "Pipelife", logo: "/partners/pipelife.svg", key: "Pipelife" },
+  { name: "Meristem", logo: "/partners/meristem.svg", key: "Meristem", website: "https://www.meristem.com/en/corporate/about-us/" },
+  { name: "Arılı / Pipelife", logo: "/partners/pipelife.svg", key: "Pipelife", website: "https://www.pipelife.com.tr" },
+  { name: "HAS Sentetik", logo: "/partners/has.svg", key: "HAS Sentetik", website: "https://www.hassentetik.com/pp-sera-ipi/" },
+  { name: "ICL", key: "ICL", website: "https://icl-growingsolutions.com/" },
 ];

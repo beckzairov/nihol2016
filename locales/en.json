@@ -19,12 +19,15 @@
         "heading_prefix": "Briefly",
         "heading_italic": "About",
         "heading_suffix": "Our Partners",
-        "Hazera": "A leader in vegetable breeding, providing high-quality seeds worldwide.",
-        "Enza Zaden": "Innovating seed solutions to enhance global food security.",
+        "Hazera": "Hazera is a global leader in the vegetable seed industry. Hazera is the 4th largest seed company in the world, and employs over 10,000 people globally.",
+        "Enza Zaden": "Enza Zaden strives to develop innovative, high-quality vegetable varieties that help feed the world. From crisp lettuce and bright sweet peppers to juicy tomatoes, crunchy cucumbers and aromatic onions, the company breeds more than 30 different vegetable crops. Its impact reaches far beyond the greenhouse — its seeds are sown in fields and gardens around the world.",
         "Fitó": "Specializing in crop improvement with cutting-edge agricultural solutions.",
         "Dutch Plantin": "Sustainable cocopeat solutions for modern agriculture.",
         "Meristem": "Enhancing soil and plant health through innovative products.",
-        "Pipelife": "A global provider of sustainable piping systems."
+        "Pipelife": "Arılı Plastik, part of the Pipelife Group, produces agricultural twines and piping solutions in Türkiye.",
+        "HAS Sentetik": "A Turkish manufacturer of polypropylene greenhouse twine for supporting crops during cultivation.",
+        "ICL": "Plant nutrition and fertilizer solutions for agriculture, including controlled-release and water-soluble fertilizers.",
+        "visit_website": "Visit {{brand}} website (opens in a new tab)"
     },
     "about": {
         "title": "About Us",

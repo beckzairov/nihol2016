@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-import { FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUpRight, FiGlobe } from "react-icons/fi";
 import { partners } from "../content/site";
 import useSiteCopy from "../hooks/useSiteCopy";
 export default function OurPartners() {
@@ -27,7 +27,7 @@ export default function OurPartners() {
                 aria-pressed={selected === index}
                 onClick={() => setSelected(index)}
               >
-                <span className="partner-number">0{index + 1}</span>
+                <span className="partner-number">{String(index + 1).padStart(2, "0")}</span>
                 {partner.name}
                 <FiArrowUpRight />
               </button>
@@ -35,15 +35,26 @@ export default function OurPartners() {
           </div>
           <article className="partner-detail" aria-live="polite">
             <span className="eyebrow">NIHOL × {active.name.toUpperCase()}</span>
-            <Image
+            {active.logo ? <Image
               src={active.logo}
               alt={active.name}
               width={230}
               height={115}
-            />
+            /> : <span className="partner-wordmark">{active.name}</span>}
             <p>{t(`our_partners.${active.key}`)}</p>
+            <a
+              className="partner-website"
+              href={active.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={t("our_partners.visit_website", { brand: active.name })}
+            >
+              <FiGlobe aria-hidden="true" />
+              <span>{new URL(active.website).hostname.replace(/^www\./, "")}</span>
+              <span className="partner-website-arrow"><FiArrowUpRight aria-hidden="true" /></span>
+            </a>
             <span className="partner-pagination">
-              {String(selected + 1).padStart(2, "0")} <span>/ 06</span>
+              {String(selected + 1).padStart(2, "0")} <span>/ {String(partners.length).padStart(2, "0")}</span>
             </span>
           </article>
         </div>

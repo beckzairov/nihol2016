@@ -11,12 +11,12 @@ export default function Partners() {
         <div className="partner-logos">
           {partners.map((partner) => (
             <a key={partner.name} href="#partners" aria-label={partner.name}>
-              <Image
+              {partner.logo ? <Image
                 src={partner.logo}
                 alt={partner.name}
                 width={140}
                 height={55}
-              />
+              /> : <span className="partner-wordmark">{partner.name}</span>}
             </a>
           ))}
         </div>
