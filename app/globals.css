@@ -868,6 +868,7 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 80px;
 }
+.partner-accordion { display: none; }
 .partner-list button {
   width: 100%;
   border: 0;
@@ -1454,6 +1455,21 @@ p {
   }
 }
 @media (max-width: 600px) {
+  .partner-explorer { display: none; }
+  .partner-accordion { display: block; }
+  .partner-accordion-item h3 { margin: 0; font: inherit; }
+  .partner-accordion-item + .partner-accordion-item button { border-top: 0; }
+  .partner-accordion button { scroll-margin-top: 100px; }
+  .partner-accordion button[aria-expanded="true"] { color: var(--ink); border-bottom-color: transparent; }
+  .partner-accordion button svg { flex-shrink: 0; transition: transform 180ms ease; }
+  .partner-accordion button[aria-expanded="true"] svg { transform: rotate(180deg); }
+  .partner-accordion button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+  .partner-accordion .partner-detail { min-height: 0; padding: 22px 18px 26px; margin-bottom: 12px; }
+  .partner-accordion .partner-detail > .eyebrow { position: static; }
+  .partner-accordion .partner-detail img,
+  .partner-accordion .partner-detail > .partner-wordmark { height: 75px; margin-top: 16px; }
+  .partner-accordion .partner-detail > p { margin-top: 16px; font-size: 16px; }
+  .partner-accordion .partner-website { margin-top: 18px; }
   .section-shell {
     width: calc(100% - 40px);
   }
