@@ -85,7 +85,9 @@ function PartnerContent({ partner }) {
       ) : (
         <span className="partner-wordmark">{partner.name}</span>
       )}
-      <p>{t(`our_partners.${partner.key}`)}</p>
+      {t(`our_partners.${partner.key}`).split("\n\n").map((paragraph, index) => (
+        <p key={`${partner.key}-${index}`}>{paragraph}</p>
+      ))}
       <a
         className="partner-website"
         href={partner.website}
